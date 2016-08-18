@@ -41,6 +41,8 @@ public class Contact {
 		this.email = email;
 		this.phone = phone;
 	}
-	
+	public String toString(){
+		return this.name;
+	}
 	
 }
