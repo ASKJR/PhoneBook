@@ -3,3 +3,4 @@
 bin/phonebook/Contact.class
 .settings/org.eclipse.jdt.core.prefs
 bin/phonebook/PhoneBook.class
+*.class
