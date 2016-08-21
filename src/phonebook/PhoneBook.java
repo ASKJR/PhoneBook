@@ -9,5 +9,8 @@ public class PhoneBook {
 	public PhoneBook(){
 		contactList = new ArrayList<Contact>();
 	}
+	public void addContact(Contact contact){
+		this.contactList.add(contact);
+	}
 	
 }
