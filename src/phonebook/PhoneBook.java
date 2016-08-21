@@ -1,5 +1,13 @@
 package phonebook;
 
-public class PhoneBook {
+import java.util.ArrayList;
 
+public class PhoneBook {
+	ArrayList<Contact> contactList;
+	
+	//Constructor
+	public PhoneBook(){
+		contactList = new ArrayList<Contact>();
+	}
+	
 }
