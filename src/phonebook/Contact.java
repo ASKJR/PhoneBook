@@ -42,7 +42,10 @@ public class Contact {
 		this.phone = phone;
 	}
 	public String toString(){
-		return this.name;
+		return "Name: "   + this.name    + "\n" +
+			   "Adress: " + this.address + "\n" +
+			   "Email: "  + this.email   + "\n" +
+			   "Phone: "  + this.phone   + "\n";
 	}
 	
 }
