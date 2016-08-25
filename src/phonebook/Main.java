@@ -1,10 +1,11 @@
 package phonebook;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		PhoneBook pb = new PhoneBook();
 		ArrayList<Contact> contactList = new  ArrayList<Contact>();
 		Contact c1 = new Contact("Jose","Av bandeirantes, 1299","jose@gmail.com","9999-9999");
@@ -17,6 +18,14 @@ public class Main {
 		System.out.println(pb);
 		pb.removeContactByName("Ruan");
 		System.out.println(pb);
+		
+		ContactDAO dao = new ContactDAO();
+		c2.setId(2);
+		dao.insert(c1);
+		dao.insert(c2);
+		dao.insert(c3);
+		dao.delete(c2);
+		
 	}
 
 }
