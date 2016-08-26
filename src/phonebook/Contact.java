@@ -48,10 +48,11 @@ public class Contact {
 		this.phone = phone;
 	}
 	public String toString(){
-		return "Name: "   + this.name    + "\n" +
-			   "Adress: " + this.address + "\n" +
-			   "Email: "  + this.email   + "\n" +
-			   "Phone: "  + this.phone   + "\n";
+		return "ID:     "   + this.id      + "\n" +
+			   "Name:   "   + this.name    + "\n" +
+			   "Adress: "   + this.address + "\n" +
+			   "Email:  "   + this.email   + "\n" +
+			   "Phone:  "   + this.phone   + "\n";
 	}
 	
 }
