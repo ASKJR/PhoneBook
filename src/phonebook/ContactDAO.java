@@ -57,7 +57,7 @@ public class ContactDAO {
 		}
 	}
 	
-	public List<Contact> getLista() {
+	public List<Contact> getAllContacts() {
 	     try {
 	         con  = new ConnectionFactory().getConnection();
 	         stmt = con.prepareStatement(SELECT);
@@ -77,9 +77,9 @@ public class ContactDAO {
 	     } catch (SQLException e) {
 	         throw new RuntimeException(e);
 	     }finally{
-	    	 try { if (rs != null) stmt.close();   } catch (Exception e) {};
-			 try { if (stmt != null) stmt.close(); } catch (Exception e) {};
-			 try { if (con  != null) con.close();  } catch (Exception e) {};
+	    	 try { if (rs   != null) stmt.close();   } catch (Exception e) {};
+			 try { if (stmt != null) stmt.close();   } catch (Exception e) {};
+			 try { if (con  != null) con.close();    } catch (Exception e) {};
 		}
 	 }
 	

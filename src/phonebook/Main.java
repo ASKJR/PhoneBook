@@ -28,7 +28,7 @@ public class Main {
 		dao.delete(c2)*/;
 		//c3.setId(3);
 		//dao.update(c3);
-		List<Contact> lista = dao.getLista();
+		List<Contact> lista = dao.getAllContacts();
 		System.out.println(lista);
 		
 		
